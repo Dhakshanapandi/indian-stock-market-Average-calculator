@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Average Calculator</title>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="parent">
+      <h1 id="title">Indian Stock Market Average Calculator</h1>
+      <div class="fbuy">
+        <p>First Buy</p>
+        <hr id="hrline" />
+        <p>Units</p>
+        <input type="number" name="funit" id="funit" /><br /><br />
+        <span id="error1"></span>
+        <p>Price</p>
+        <input
+          type="number"
+          name="fprice"
+          id="fprice"
+          size="100px"
+        /><br /><br />
+        <span id="error2"></span>
+        <hr id="hrline" />
+      </div>
+      <div class="sbuy">
+        <p>Second Buy</p>
+        <hr id="hrline" />
+        <p>Units</p>
+        <input type="number" name="sunit" id="sunit"/><br /><br />
+        <span id="error3"></span>
+        <p>Price</p>
+        <input type="number" name="sprice" id="sprice" /><br /><br />
+        <span id="error4"></span>
+        <hr id="hrline" />
+        <div class="btn">
+          <button type="button" onclick="getaverage()" id="btn1">Calculate Average</button>
+          <button onclick="clearfields()" id="btn2">Clear Fields</button>
+        </div>
+      </div>
+      <div class="invamnt">
+        <p id="finv"></p>
+        <p id="sinv"></p>
+      </div>
+      <div id="result">
+        <p id="totunits"></p>
+        <p id="avgprice"></p>
+        <p id="totamnt"></p>
+        <hr id="hrline2" />
+      </div>
+      <div class="vl"></div>
+    </div>
+  </body>
+</html>
